@@ -1,11 +1,6 @@
 # Yash Rao
 
-Solutions Engineer at HummingBird Technosys, working on a DO-178C / DO-254 / DO-278A
-compliance platform for aerospace software certification. B.S. in Technology and
-Information Management, minor in Economics, UC Santa Cruz.
-
-I work at the point where AI tooling meets safety-critical software assurance: what it
-takes to actually trust an AI agent inside a regulated process, and how you show it.
+Customer-focused Technology and Information Management graduate with ability to bridge technical solutions with business strategy through solid understanding of information systems and economic principles. Passionate about communicating the value of technology in order to satisfy customer needs.
 
 ## Selected work
 
