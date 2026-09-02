@@ -24,6 +24,17 @@ use). Writing the requirements against the source turned up three real defects i
 and a cold independent reviewer re-ran the verification. There is very little public
 material on qualifying anything in an AI toolchain under DO-330.
 
+### [dal-c](https://github.com/YashRao10/dal-c)
+
+15 small C components written the way avionics software is, following DO-178C at Design
+Assurance Level C. Every component has a requirements doc, the code is tagged back to each
+requirement, and the tests have to cover every function to 100 percent MC/DC or CI won't
+pass. No malloc, no recursion. Right now that is 73 high-level and 182 low-level
+requirements, 2479 test checks, and a fuzz run of 200,000 iterations that stays clean under
+the sanitizers and on gcc, clang and 32-bit. The [site](https://yashrao10.github.io/dal-c/)
+rebuilds the traceability matrix and coverage report from each run, so what it shows is
+always current.
+
 ### [AI Compliance Crosswalk](https://github.com/YashRao10/ai-compliance-crosswalk)
 
 A compliance crosswalk tool mapping the EU AI Act and NIST AI RMF requirements to real
