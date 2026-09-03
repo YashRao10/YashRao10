@@ -15,7 +15,7 @@ deterministic checks for permission mismatches, exposed secrets, and pinned-depe
 CVEs, and every finding is labeled by which source produced it. Live dashboard tracks 5
 real public servers. 195 tests, fully open source.
 
-### [DO-330 tool qualification study](https://github.com/YashRao10/mcp-ratchet/tree/main/qualification)
+### [DO-330 tool qualification study](https://github.com/YashRao10/mcp-ratchet-do330)
 
 A full worked example of taking mcp-ratchet's deterministic drift-detection function
 through DO-330: the qualification trigger, eleven Tool Operational Requirements,
@@ -56,6 +56,32 @@ Built a GPT-style decoder-only transformer from scratch in PyTorch: custom token
 causal self-attention, and autoregressive sampling, with no pretrained weights or
 high-level libraries. Ran a series of training experiments varying model size and
 learning-rate schedule, cutting validation loss from 1.75 to 1.62 across the runs.
+
+## Markets and economics
+
+### [Causal Toolkit](https://github.com/YashRao10/causal-toolkit)
+
+A synthetic-control research instrument. Point it at any market or company event and any
+ticker, and it runs the Abadie-Diamond-Hainmueller synthetic-control method to test whether
+the event actually caused a break from a hand-picked peer group, or whether the move is just
+a pre-existing trend or estimation noise. Each run writes a self-contained HTML report with
+an actual-vs-synthetic chart, placebo tests, and a written verdict, and regenerates a
+browsable index of every case run so far.
+
+### [FRED Nowcast](https://github.com/YashRao10/fred-nowcast)
+
+A small, transparent GDP nowcasting model. It predicts real GDP growth from five
+higher-frequency FRED indicators (industrial production, retail sales, initial claims,
+payrolls, housing starts) with a plain OLS bridge equation, and checks itself against a
+naive baseline with an honest walk-forward backtest before claiming it is worth anything.
+
+### [Regime Classifier](https://github.com/YashRao10/regime-classifier)
+
+Classifies market history into six named macro regimes from FRED data (the yield curve, the
+Fed funds path, inflation, unemployment), then backtests how all 11 GICS sector ETFs plus
+gold and long Treasuries have performed in each regime since 1999. It turns an ad hoc "what
+is the Fed backdrop doing to these sectors" question into a re-runnable one. The taxonomy is
+a rule set I built for the project, and the README says so plainly.
 
 ## Elsewhere
 
