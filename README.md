@@ -2,6 +2,49 @@
 
 Customer-focused Technology and Information Management graduate with ability to bridge technical solutions with business strategy through solid understanding of information systems and economic principles. Passionate about communicating the value of technology in order to satisfy customer needs.
 
+## Newest work
+
+### [Agentic Engineering Workflow](https://yashrao10.github.io/agentic-engineering-workflow/)
+
+An interactive design walkthrough of an engineering team made of AI agents. Seven
+development agents write requirements, design, code and tests. A separate three-agent
+compliance team audits the result and can only read the shared record, so nothing grades its
+own work, and a short publishing step runs only after a clean audit. The page is playable, in
+a flat view and a 3D view: watch a project move through the org, click an agent to see its
+stats, try to break the firewall, and break the audit to watch it fail. The numbers come from
+my own runs on invented sample briefs and are labeled as a small sample: 15 of 17 cloud runs
+finished all seven development agents, test strength went from 67 percent to 100 percent of
+planted defects caught after a feedback fix, and 224 automated checks guard the system, none
+of which call a model. [Source](https://github.com/YashRao10/agentic-engineering-workflow).
+
+### [Connectivity Cost Index](https://yashrao10.github.io/connectivity-cost-index/)
+
+A cost-per-Mbps comparison of every home internet technology (satellite, fiber, cable, DSL
+and three kinds of fixed wireless) across all 50 states and DC, built from the FCC's National
+Broadband Map and layered with Ookla speed tests through Q3 2026, NTIA's broadband-subsidy
+filings checked state by state against NTIA's own PDFs, and median household income. The
+premise did not survive the data, in a good way: Starlink beats 5G home internet on cost per
+Mbps in all 51 states and DC, but where fiber or cable reaches it costs 4.3 to 49 times more
+per Mbps. [Code](https://github.com/YashRao10/connectivity-cost-index).
+
+### [Sleight of Mind](https://yashrao10.github.io/sleight-of-mind/)
+
+A capability-elicitation eval with chess as the testbed, because every move can be graded
+exactly. A language model is asked to play like a human rated 1000, 1400 or 1800 on the same
+117 real Lichess positions, and each move is graded twice: by Stockfish for quality and by
+Maia-2 for how human it looks. The dial barely turned: on 57 of 117 positions the model
+played the same move whether told to play like a 1000 or an 1800. One model and 117
+positions, so a first result and not a verdict on the method.
+[Eval code](https://github.com/YashRao10/chess-sandbagging-eval).
+
+### [MACD](https://yashrao10.github.io/macd/)
+
+A terminal tool for running several Claude Code sessions as a team. Split panes let you watch
+each session live, and a message and task router lets one main session hand work to the others
+and see what came back. It was built across two real machines, a Windows orchestrator and a
+MacBook worker, with a Unix socket on Mac and Linux and a named pipe on Windows. 62 tests.
+[Code](https://github.com/YashRao10/macd).
+
 ## Safety-Critical & AI Tool Qualification
 
 AI tooling is moving into DO-178C and DO-330 workflows faster than the regulatory process is ready to certify it. This is the body of work that does exactly that: write safety-critical software to the standard, qualify a tool against it, apply that discipline on real DO-178C projects, and extend the same rigor to measuring whether an LLM or agent actually behaves to its own stated spec.
